@@ -88,6 +88,3 @@ Okra.buildWithShortUrl({
 ## Other information
 For enquires and questions, contact
 - [@oreace](https://github.com/oreace)
-
-## License
-[MIT](LICENSE)
