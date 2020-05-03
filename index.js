@@ -1,3 +1,3 @@
-import Okra from './dist/okra'
+import Okra from './dist/bundle'
 
 export default Okra
