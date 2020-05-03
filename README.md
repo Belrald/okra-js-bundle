@@ -79,7 +79,7 @@ Okra.buildWithShortUrl({
 ## Okra.buildWithShortUrl Options
 
 |Name                   | Type           | Required            | Description         |
-|-----------------------|----------------|-------------------------------------------|
+|-----------------------|----------------|---------------------|---------------------|
 |  `short_ur`           | `String`       | true                | Your generated url from link builder.
 |  `onSuccess`          | `Function`     | false               | Action to perform after widget is successful
 |  `onClose`            | `Function`     | false               | Action to perform if widget is closed
