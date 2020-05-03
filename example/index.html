@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Okra</title>
+    <meta name="description" content="The simplest way to connect a Nigerian bank account to your app.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+        button{
+        font-family: inherit;
+        text-decoration: none;
+        padding: 1rem 2rem; 
+        padding: 1.3rem 2.5rem;
+        display: inline-block;
+        border-radius: .5rem;
+        transition: all .2s;
+        font-size: 1.6rem;
+        color: white;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin-top: 1rem
+    }
+    button:focus{
+        outline: none;
+    }
+    button.primary{
+        background-color: #3ab795;
+        border: 1px solid #3ab795;
+    }
+    button.secondary{
+        background-color: #B73A5C;
+        border: 1px solid #B73A5C;
+    }
+    button:hover{
+       transform: translateY(-.3rem);
+       box-shadow: 0 1rem 2rem rgba(black, .2);
+    }
+    button:active{
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(black, .2);
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+            <div>
+                <h1>Click any of the buttons below</h1>
+                <button class="primary" onclick="connectViaCode()">Build with short url</button> 
+                <br/>
+                <button class="secondary" onclick="connectViaOptions()">Build with options</button> 
+            </div>
+    </div>
+
+    <script type="module" src="../dist/bundle.js"></script>
+    <script type="text/javascript">
+        function connectViaOptions(){
+            Okra.buildWithOptions({
+                name: 'Peter the Builder',
+                env: 'production-sandbox',
+                key: 'd82907b-fb7e-584a-abf1-fa43900134bd',
+                token: '5b988ea132d3d100cb7c409',
+                onSuccess: function(data){
+                    console.log('options success', data)
+                },
+                onClose: function(){
+                    console.log('options close')
+                }
+            })
+        }
+
+        function connectViaCode(){
+            Okra.buildWithShortUrl({
+                short_url: '7xGZ4CMJ',
+            })
+        }     
+    </script>
+    </body>
+</html>

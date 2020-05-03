@@ -1,0 +1,21 @@
+{
+  "name": "okra-js-bundle",
+  "version": "1.0.0",
+  "description": "JS library for implementing Okra",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okraHQ/okra-js-bundle.git"
+  },
+  "keywords": [
+    "Okra",
+    "Okra-js",
+    "OkraJs"
+  ],
+  "author": "Okra <okra.ng>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okraHQ/okra-js-bundle/issues"
+  },
+  "homepage": "https://github.com/okraHQ/okra-js-bundle#readme"
+}
