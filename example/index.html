@@ -78,6 +78,12 @@
         function connectViaCode(){
             Okra.buildWithShortUrl({
                 short_url: '7xGZ4CMJ',
+                onSuccess: function(data){
+                    console.log('options success', data)
+                },
+                onClose: function(){
+                    console.log('options close')
+                }
             })
         }     
     </script>
